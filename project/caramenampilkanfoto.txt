@@ -1,0 +1,26 @@
+<?php
+        // Koneksi ke database
+        include_once "koneksi.php";
+
+        // Query untuk mengambil data buku
+        $sql = "SELECT * FROM tbl_buku";
+        $result = mysqli_query($koneksi, $sql);
+
+        // Tampilkan data buku
+        if (mysqli_num_rows($result) > 0) {
+            while ($row = mysqli_fetch_assoc($result)) {
+                echo "Judul Buku: " . $row["judul_buku"] . "<br>";
+                echo "Pengarang: " . $row["pengarang"] . "<br>";
+                echo "Penerbit: " . $row["penerbit"] . "<br>";
+                echo "Tahun Terbit: " . $row["tahun_terbit"] . "<br>";
+                echo "Halaman: " . $row["halaman"] . "<br>";
+                echo "Deskripsi: " . $row["deskripsi"] . "<br>";
+                echo '<img src="data:image/jpeg;base64,' . base64_encode($row['gambar']) . '"/>' . "<br>";
+            }
+        } else {
+            echo "Tidak ada data buku.";
+        }
+
+        // Tutup koneksi ke database
+        mysqli_close($koneksi);
+        ?>

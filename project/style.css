@@ -1,0 +1,36 @@
+body{
+    background: url(asset/image/bglogin.png);
+
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.login{
+height: 250px;
+width: 250px;
+background: rgb(255, 196, 0);
+display: flex;
+align-items: center;
+justify-content: center;
+background-image: url("asset\image\bglogin.png");
+};
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.registrasi{
+height: 450px;
+width: 380px;
+background: rgb(255, 196, 0);
+display: flex;
+align-items: center;
+justify-content: center;
+background-image: url("asset\image\bglogin.png");
+};
+

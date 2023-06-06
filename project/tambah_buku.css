@@ -1,0 +1,27 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+form { 
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    justify-content: center;
+    align-items: center;
+    background-color: skyblue;
+    border-radius: 10px;
+}
+.label {
+    display: flex;
+    flex-direction: column;
+}
+.label input {
+    border-radius: 30px;
+}
+.btn {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
